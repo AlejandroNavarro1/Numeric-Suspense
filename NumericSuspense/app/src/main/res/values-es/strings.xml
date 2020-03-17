@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Suspenso Numérico</string>
+    <string name="Again">De Nuevo</string>
+    <string name="Backwards">AlRevés</string>
+    <string name="High_Score">Puntuación Más Alta:</string>
+    <string name="Menu"> Índice</string>
+    <string name="OutofTime">Fuera De Tiempo</string>
+    <string name="SumToTen">SumaA10</string>
+    <string name="WrongTile"> Tocaste El Número Equivocado</string>
+    <string name="Your_Score"> Tu Puntuación</string>
+    <string name="arithmetic">Aritmética</string>
+    <string name="arithmetic_help">Presione los cuadros de números contado ascendentemente. Cuidado porque los cuadros de los números cambian de posición.</string>
+    <string name="backward_help">Presione los cuadros de números contando en forma descedente. Cuidado porque los cuadros de los números cambian de posición.</string>
+    <string name="info">Total: %s</string>
+    <string name="is_zero">Juego Completo</string>
+    <string name="sum_to_ten_help">Presione dos cuadros de números que el total suma a 10.</string>
+    <string name="time">Tiempo: %s</string>
+    <string name="click_up_here">(Presiona El Texto Coloreado)</string>
+    <string name="SixtySec">60Segundos</string>
+    <string name="TimesUp">Tiempo Acabado</string>
+    <string name="UserEndGame">Terminaste El Juego</string>
+    <string name="sixtysec_help">Tienes 60 segundos para que presione los cuadros de números contado ascendentemente. Cuidado porque los cuadros de los números cambian de posición.</string>
+</resources>

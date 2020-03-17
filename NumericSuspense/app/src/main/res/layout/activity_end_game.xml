@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    tools:context="com.navarrosoft.numericsuspense.EndGame"
+    android:id="@+id/end_game_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:gravity="center">
+
+    <TextView
+        android:id="@+id/game_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="54sp"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"
+        android:text="P"
+        android:layout_alignParentTop="true"
+        android:paddingBottom="10dp"
+        android:layout_centerHorizontal="true"/>
+
+
+    <TextView
+        android:id="@+id/reason_of_loss"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:text="P"
+        android:textColor="#d32f2f"
+        android:paddingBottom="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/game_type"/>
+
+    <TextView
+        android:id="@+id/High_Score_View"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:text="P"
+        android:paddingBottom="10dp"
+        android:textSize="33sp"
+        android:layout_below="@id/reason_of_loss"/>
+
+    <TextView
+        android:id="@+id/Your_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Your_Score"
+        android:textSize="26sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/High_Score_View"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:id="@+id/OverAll_Score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="8"
+        android:textSize="100sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/Your_score"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"/>
+
+
+
+    <LinearLayout
+        android:id="@+id/button_end_game"
+        android:layout_above="@+id/adView"
+        android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/menu_button"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/Menu"
+            android:textColor="@color/colorAccent"
+            android:background="@drawable/endbuttonshape"
+            android:textSize="26sp"
+            android:textStyle="bold"/>
+
+        <Button
+            android:layout_marginLeft="20dp"
+            android:id="@+id/playagain_button"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/Again"
+            android:textColor="@color/colorAccent"
+            android:background="@drawable/endbuttonshape"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+    </LinearLayout>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id"/>
+
+</RelativeLayout>
